@@ -1,0 +1,48 @@
+# Ignore frontend build files - this is a Desktop App, not Web App
+src/
+src-tauri/
+static/
+public/
+dist/
+build/
+*.html
+!index.html
+*.css
+*.js
+*.ts
+*.svelte
+!api/**/*.js
+!api/**/*.json
+
+# Ignore Tauri files
+tauri.conf.json
+Cargo.toml
+Cargo.lock
+
+# Ignore development files
+node_modules/
+.env
+.env.local
+.env.*.local
+
+# Ignore documentation
+*.md
+!README.md
+
+# Ignore scripts
+scripts/
+*.ps1
+*.sh
+
+# Ignore test files
+test-*/
+*.test.js
+*.test.ts
+
+# Ignore other desktop app files
+discord-bot/
+*.exe
+*.msi
+*.dmg
+*.deb
+*.rpm

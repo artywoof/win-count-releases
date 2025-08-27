@@ -1,0 +1,95 @@
+# Minisign private keys - อย่า commit!
+keys/minisign.key
+keys/*.key
+*.key
+keys/password.txt
+backup/
+
+# Tauri signing keys
+.tauri/
+*.key
+!*.key.pub
+~/.tauri/
+
+# Tauri build artifacts
+target/
+dist/
+build/
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (ถ้ามี)
+node_modules/
+
+# Bun lockfile binary (เก็บไว้)
+!bun.lockb
+
+# SvelteKit
+/.svelte-kit
+/package
+
+# Environment files - CRITICAL SECURITY
+.env
+.env.*
+.env.local
+.env.production
+.env.staging
+.env.development
+admin-env.*
+**/admin-env.*
+**/.env*
+!.env.example
+
+# Sensitive data - NEVER COMMIT
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials/
+private/
+certificate.*
+*.crt
+*.csr
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+license.db
+
+# Security files
+expected_hash.bin
+*.backup
+*.bak
+*.tmp
+*.temp
+.cache/
+
+# Tauri signing keys - CRITICAL SECURITY
+tauri-signing-keys.txt
+tauri-signing-keys-new.txt
+*.signing-keys.*
+signing-keys/
+TAURI_SIGNING_KEYS.txt
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+.vercel
